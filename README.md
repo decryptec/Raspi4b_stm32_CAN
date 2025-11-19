@@ -1,6 +1,16 @@
-# Raspi4b_stm32_CAN
-Rasperry pi 4b (usb to CAN) communication with stm32 devices
+# Raspi4b_stm32_CAN  
+CAN bus communication between Raspberry Pi 4B and STM32  
 
-raspberry pi4b - USB to CAN Bus Converter 
+## Overview  
+This project demonstrates how to connect a **Raspberry Pi 4B** (via USB-to-CAN adapter) with an **STM32 MCU** using the **SN65HVD230 CAN transceiver**.  
 
-stm32 mcu - SN65HVD230 CAN Bus Transceiver
+## Hardware  
+- Raspberry Pi 4B  
+- USB-to-CAN adapter  
+- STM32 microcontroller with CAN peripheral  
+- SN65HVD230 CAN transceiver  
+
+## Usage  
+- Configure Raspberry Pi with `can-utils`  
+- Enable CAN peripheral on STM32 (via CubeMX or HAL)  
+- Test communication using `candump` and `cansend`  
